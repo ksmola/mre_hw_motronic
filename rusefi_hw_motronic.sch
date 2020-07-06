@@ -33,20 +33,7 @@ F 3 "" H 6350 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1700 6550 3000 6550
-Wire Wire Line
 	3000 6550 3000 6700
-$Comp
-L molex_48pin_MRE:molex_48pin_MRE U??
-U 1 1 5F03C175
-P 14150 4800
-F 0 "U??" H 15288 5200 60  0000 L CNN
-F 1 "molex_48pin_MRE" V 15350 4800 60  0001 C CNN
-F 2 "" H 14150 4800 60  0001 C CNN
-F 3 "" H 14150 4800 60  0001 C CNN
-	1    14150 4800
-	1    0    0    -1  
-$EndComp
 Text Notes 1000 1500 0    79   ~ 0
 Motronic 55pin
 $Comp
@@ -208,8 +195,6 @@ F 3 "" H 2700 2700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1700 2750 2700 2750
-Wire Wire Line
 	2700 2750 2700 2700
 $Comp
 L power:+BATT #PWR?
@@ -222,8 +207,6 @@ F 3 "" H 2700 3300 50  0001 C CNN
 	1    2700 3300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1700 3350 2700 3350
 Wire Wire Line
 	2700 3350 2700 3300
 $Comp
@@ -239,8 +222,6 @@ F 3 "" H 2700 5150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2700 5150 2700 5250
-Wire Wire Line
-	2700 5250 1700 5250
 Text GLabel 1850 5650 2    50   Input ~ 0
 AC_ON_INPUT
 Wire Wire Line
@@ -258,8 +239,6 @@ F 3 "" H 2800 6800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2800 6800 2800 6850
-Wire Wire Line
-	2800 6850 1700 6850
 Text Notes 14600 1500 0    79   ~ 0
 microRusEFI
 $Comp
@@ -519,120 +498,6 @@ Wire Wire Line
 	14550 2750 14700 2750
 Wire Wire Line
 	14550 2850 14700 2850
-Text GLabel 14550 5750 0    50   Input ~ 0
-INJ_A
-Text GLabel 14550 5850 0    50   Input ~ 0
-INJ_B
-Wire Wire Line
-	14550 5750 14700 5750
-Wire Wire Line
-	14700 5850 14550 5850
-Text Notes 7350 3350 0    70   ~ 0
-Injection
-$Comp
-L Device:Q_NMOS_DGS Q?
-U 1 1 5EF6C10A
-P 7900 3700
-F 0 "Q?" H 8104 3746 50  0000 L CNN
-F 1 "CSD18537NQ5A" H 8104 3655 50  0000 L CNN
-F 2 "" H 8100 3800 50  0001 C CNN
-F 3 "~" H 7900 3700 50  0001 C CNN
-	1    7900 3700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Q_NMOS_DGS Q?
-U 1 1 5EF6CFD3
-P 7900 4600
-F 0 "Q?" H 8104 4646 50  0000 L CNN
-F 1 "CSD18537NQ5A" H 8104 4555 50  0000 L CNN
-F 2 "" H 8100 4700 50  0001 C CNN
-F 3 "~" H 7900 4600 50  0001 C CNN
-	1    7900 4600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5EF6D8CA
-P 8000 3950
-F 0 "#PWR?" H 8000 3700 50  0001 C CNN
-F 1 "GND" H 8005 3777 50  0000 C CNN
-F 2 "" H 8000 3950 50  0001 C CNN
-F 3 "" H 8000 3950 50  0001 C CNN
-	1    8000 3950
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5EF6DB1F
-P 8000 4850
-F 0 "#PWR?" H 8000 4600 50  0001 C CNN
-F 1 "GND" H 8005 4677 50  0000 C CNN
-F 2 "" H 8000 4850 50  0001 C CNN
-F 3 "" H 8000 4850 50  0001 C CNN
-	1    8000 4850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8000 3950 8000 3900
-Wire Wire Line
-	8000 4850 8000 4800
-Text GLabel 8150 3400 2    50   Input ~ 0
-INJ_1
-Text GLabel 8150 4300 2    50   Input ~ 0
-INJ_2
-Wire Wire Line
-	8150 4300 8000 4300
-Wire Wire Line
-	8000 4300 8000 4400
-Wire Wire Line
-	8150 3400 8000 3400
-Wire Wire Line
-	8000 3400 8000 3500
-Text GLabel 7600 3700 0    50   Input ~ 0
-INJ_A
-Text GLabel 7600 4600 0    50   Input ~ 0
-INJ_B
-Wire Wire Line
-	7600 3700 7650 3700
-Wire Wire Line
-	7600 4600 7650 4600
-Wire Wire Line
-	7650 4700 7650 4600
-Connection ~ 7650 4600
-Wire Wire Line
-	7650 4600 7700 4600
-Wire Wire Line
-	7650 3800 7650 3700
-Connection ~ 7650 3700
-Wire Wire Line
-	7650 3700 7700 3700
-$Comp
-L power:GND #PWR?
-U 1 1 5F032B4B
-P 7650 4250
-F 0 "#PWR?" H 7650 4000 50  0001 C CNN
-F 1 "GND" H 7655 4077 50  0000 C CNN
-F 2 "" H 7650 4250 50  0001 C CNN
-F 3 "" H 7650 4250 50  0001 C CNN
-	1    7650 4250
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5F032C97
-P 7650 5150
-F 0 "#PWR?" H 7650 4900 50  0001 C CNN
-F 1 "GND" H 7655 4977 50  0000 C CNN
-F 2 "" H 7650 5150 50  0001 C CNN
-F 3 "" H 7650 5150 50  0001 C CNN
-	1    7650 5150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7650 5150 7650 5000
-Wire Wire Line
-	7650 4250 7650 4100
 Wire Wire Line
 	5350 4200 5000 4200
 $Comp
@@ -685,10 +550,8 @@ Text GLabel 14550 4600 0    50   Input ~ 0
 MAP
 Text GLabel 14550 3850 0    50   Input ~ 0
 TPS
-Text GLabel 14550 5200 0    50   Input ~ 0
+Text GLabel 14550 4950 0    50   Input ~ 0
 O2_IN
-Wire Wire Line
-	14550 5200 14700 5200
 Wire Wire Line
 	14550 4600 14700 4600
 Wire Wire Line
@@ -753,8 +616,6 @@ Wire Wire Line
 	14550 2000 14700 2000
 Text GLabel 14550 2200 0    50   Input ~ 0
 IGN_SWITCH
-Wire Wire Line
-	1700 1650 2150 1650
 $Comp
 L power:GND #PWR?
 U 1 1 5F290D04
@@ -768,8 +629,6 @@ F 3 "" H 3100 4000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3100 3950 3100 4000
-Wire Wire Line
-	1700 3950 3100 3950
 $Comp
 L power:GND #PWR?
 U 1 1 5F27B702
@@ -783,10 +642,6 @@ F 3 "" H 3100 3500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3100 3450 3100 3500
-Wire Wire Line
-	1700 3450 3100 3450
-Wire Wire Line
-	1700 2950 3100 2950
 $Comp
 L power:GND #PWR?
 U 1 1 5F25375C
@@ -817,8 +672,6 @@ F 3 "" H 3100 1800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3100 1750 3100 1800
-Wire Wire Line
-	1700 1750 3100 1750
 Wire Wire Line
 	14550 2200 14700 2200
 $Comp
@@ -1183,28 +1036,6 @@ Wire Wire Line
 	10350 1700 10350 1750
 $Comp
 L Device:R_US R?
-U 1 1 5EFDAFFB
-P 7650 3950
-F 0 "R?" H 7718 3996 50  0000 L CNN
-F 1 "100K" H 7718 3905 50  0000 L CNN
-F 2 "" V 7690 3940 50  0001 C CNN
-F 3 "~" H 7650 3950 50  0001 C CNN
-	1    7650 3950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_US R?
-U 1 1 5EFDB5E1
-P 7650 4850
-F 0 "R?" H 7718 4896 50  0000 L CNN
-F 1 "100K" H 7718 4805 50  0000 L CNN
-F 2 "" V 7690 4840 50  0001 C CNN
-F 3 "~" H 7650 4850 50  0001 C CNN
-	1    7650 4850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_US R?
 U 1 1 5EFF9416
 P 11700 6350
 F 0 "R?" H 11768 6396 50  0000 L CNN
@@ -1245,13 +1076,11 @@ Wire Wire Line
 	7000 1900 6850 1900
 Wire Wire Line
 	7400 1900 7700 1900
-Text GLabel 13350 4600 0    50   Input ~ 0
+Text GLabel 14550 4300 0    50   Input ~ 0
 OIL_TEMP
-Text GLabel 13350 4750 0    50   Input ~ 0
+Text GLabel 14550 6050 0    50   Input ~ 0
 OIL_PRESSURE
-Text GLabel 13350 4900 0    50   Input ~ 0
-FUEL_PRESSURE
-Text GLabel 13350 5050 0    50   Input ~ 0
+Text GLabel 14550 4700 0    50   Input ~ 0
 VEHICLE_SPEED
 $Comp
 L Connector:Conn_01x04_Female J?
@@ -1387,7 +1216,7 @@ Text GLabel 7700 9550 0    50   Input ~ 0
 TPS
 Wire Wire Line
 	7700 9550 7800 9550
-Text GLabel 13350 5200 0    50   Input ~ 0
+Text GLabel 14550 3050 0    50   Input ~ 0
 ECON
 $Comp
 L Connector:Conn_01x03_Female J?
@@ -1414,17 +1243,6 @@ Wire Wire Line
 	7800 10300 7700 10300
 Wire Wire Line
 	7700 10400 7800 10400
-$Comp
-L RF_Module:ESP32-WROOM-32 U?
-U 1 1 5F17B09D
-P 5050 9300
-F 0 "U?" H 5050 10881 50  0000 C CNN
-F 1 "ESP32-WROOM-32" H 5050 10790 50  0000 C CNN
-F 2 "RF_Module:ESP32-WROOM-32" H 5050 7800 50  0001 C CNN
-F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" H 4750 9350 50  0001 C CNN
-	1    5050 9300
-	1    0    0    -1  
-$EndComp
 $Comp
 L hw_55_te:TPIC8101 U?
 U 1 1 5F18B4EB
@@ -1593,84 +1411,121 @@ Wire Wire Line
 $Comp
 L Connector:Conn_01x03_Female J?
 U 1 1 5F2CD396
-P 8000 10750
-F 0 "J?" H 8028 10776 50  0000 L CNN
-F 1 "Conn_01x03_Female" H 8028 10685 50  0000 L CNN
-F 2 "" H 8000 10750 50  0001 C CNN
-F 3 "~" H 8000 10750 50  0001 C CNN
-	1    8000 10750
+P 6350 10350
+F 0 "J?" H 6378 10376 50  0000 L CNN
+F 1 "Conn_01x03_Female" H 6378 10285 50  0000 L CNN
+F 2 "" H 6350 10350 50  0001 C CNN
+F 3 "~" H 6350 10350 50  0001 C CNN
+	1    6350 10350
 	1    0    0    -1  
 $EndComp
-Text GLabel 7700 10650 0    50   Input ~ 0
+Text GLabel 6050 10250 0    50   Input ~ 0
 KNOCK_1
-Text GLabel 7700 10750 0    50   Input ~ 0
+Text GLabel 6050 10350 0    50   Input ~ 0
 KNOCK_2
 $Comp
 L power:GND #PWR?
 U 1 1 5F2CDC65
-P 7700 10900
-F 0 "#PWR?" H 7700 10650 50  0001 C CNN
-F 1 "GND" H 7705 10727 50  0000 C CNN
-F 2 "" H 7700 10900 50  0001 C CNN
-F 3 "" H 7700 10900 50  0001 C CNN
-	1    7700 10900
+P 6050 10500
+F 0 "#PWR?" H 6050 10250 50  0001 C CNN
+F 1 "GND" H 6055 10327 50  0000 C CNN
+F 2 "" H 6050 10500 50  0001 C CNN
+F 3 "" H 6050 10500 50  0001 C CNN
+	1    6050 10500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7700 10900 7700 10850
+	6050 10500 6050 10450
 Wire Wire Line
-	7700 10850 7800 10850
+	6050 10450 6150 10450
 Wire Wire Line
-	7800 10750 7700 10750
+	6150 10350 6050 10350
 Wire Wire Line
-	7700 10650 7800 10650
-$Comp
-L Connector:Conn_01x03_Female J?
-U 1 1 5F072959
-P 10150 10350
-F 0 "J?" H 10178 10376 50  0000 L CNN
-F 1 "Conn_01x03_Female" H 10178 10285 50  0000 L CNN
-F 2 "" H 10150 10350 50  0001 C CNN
-F 3 "~" H 10150 10350 50  0001 C CNN
-	1    10150 10350
-	1    0    0    -1  
-$EndComp
+	6050 10250 6150 10250
 Text Notes 9800 10150 0    70   ~ 0
 ETB
 Text GLabel 9850 10250 0    50   Input ~ 0
 ETB+
 Text GLabel 9850 10350 0    50   Input ~ 0
 ETB-
-$Comp
-L power:GND #PWR?
-U 1 1 5F074701
-P 9850 10500
-F 0 "#PWR?" H 9850 10250 50  0001 C CNN
-F 1 "GND" H 9855 10327 50  0000 C CNN
-F 2 "" H 9850 10500 50  0001 C CNN
-F 3 "" H 9850 10500 50  0001 C CNN
-	1    9850 10500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9850 10500 9850 10450
-Wire Wire Line
-	9850 10450 9950 10450
 Wire Wire Line
 	9950 10350 9850 10350
 Wire Wire Line
 	9850 10250 9950 10250
+Text Notes 10700 7500 0    70   ~ 0
+KNOCK
 $Comp
-L power:GND #PWR?
-U 1 1 5F0E010F
-P 5050 10800
-F 0 "#PWR?" H 5050 10550 50  0001 C CNN
-F 1 "GND" H 5055 10627 50  0000 C CNN
-F 2 "" H 5050 10800 50  0001 C CNN
-F 3 "" H 5050 10800 50  0001 C CNN
-	1    5050 10800
+L Connector:Conn_01x02_Female J?
+U 1 1 5F0FE97C
+P 10150 10250
+F 0 "J?" H 10178 10226 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 10178 10135 50  0000 L CNN
+F 2 "" H 10150 10250 50  0001 C CNN
+F 3 "~" H 10150 10250 50  0001 C CNN
+	1    10150 10250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5050 10800 5050 10700
+	2800 6850 1700 6850
+Wire Wire Line
+	1700 6550 3000 6550
+Wire Wire Line
+	2700 5250 1700 5250
+Wire Wire Line
+	1700 3950 3100 3950
+Wire Wire Line
+	1700 1750 3100 1750
+Wire Wire Line
+	1700 3450 3100 3450
+Wire Wire Line
+	1700 3350 2700 3350
+Wire Wire Line
+	1700 2950 3100 2950
+Wire Wire Line
+	1700 2750 2700 2750
+Wire Wire Line
+	1700 1650 2150 1650
+$Comp
+L molex_48pin_MRE:molex_48pin_MRE U??
+U 1 1 5F03C175
+P 14150 4800
+F 0 "U??" H 15288 5200 60  0000 L CNN
+F 1 "molex_48pin_MRE" V 15350 4800 60  0001 C CNN
+F 2 "" H 14150 4800 60  0001 C CNN
+F 3 "" H 14150 4800 60  0001 C CNN
+	1    14150 4800
+	1    0    0    -1  
+$EndComp
+Text GLabel 14550 5200 0    50   Input ~ 0
+INJ_1
+Wire Wire Line
+	14550 5200 14700 5200
+Text GLabel 14550 5650 0    50   Input ~ 0
+INJ_1
+Wire Wire Line
+	14550 5650 14700 5650
+Wire Wire Line
+	14550 4950 14700 4950
+Wire Wire Line
+	14550 4300 14700 4300
+Text GLabel 14550 4400 0    50   Input ~ 0
+CAM
+Wire Wire Line
+	14550 4400 14700 4400
+Wire Wire Line
+	14550 3050 14700 3050
+Wire Wire Line
+	14550 4700 14700 4700
+Wire Wire Line
+	14550 6050 14700 6050
+Text GLabel 14550 3450 0    50   Input ~ 0
+USB_DP
+Text GLabel 14550 3300 0    50   Input ~ 0
+USB_DM
+Wire Wire Line
+	14550 3450 14700 3450
+Wire Wire Line
+	14550 3300 14700 3300
+Text Notes 6000 10100 0    70   ~ 0
+KNOCK
 $EndSCHEMATC
