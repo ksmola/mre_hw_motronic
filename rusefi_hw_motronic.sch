@@ -15,23 +15,12 @@ Comment4 ""
 $EndDescr
 Text Notes 10250 1450 0    70   ~ 0
 Optocoupler AC-Input
-Text Notes 6100 1550 0    70   ~ 0
+Text Notes 6100 1600 0    70   ~ 0
 Barometer
 Text Notes 1000 8000 0    70   ~ 0
 Main Relay circuit
 Text Notes 7500 2250 0    70   ~ 0
 650HZ low-pass RC
-$Comp
-L rusefi_hw_motronic:MPX4250A U$1
-U 1 1 5EF1C46A
-P 6350 1900
-F 0 "U$1" H 6340 1890 65  0001 L TNN
-F 1 "MPX4250A" H 6340 1790 65  0001 L TNN
-F 2 "Downloads:MEGASQUIRT_MPXA4250A6U" H 6340 1690 65  0001 L TNN
-F 3 "" H 6350 1900 50  0001 C CNN
-	1    6350 1900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3000 6550 3000 6700
 Text Notes 1000 1500 0    79   ~ 0
@@ -2088,7 +2077,7 @@ U 1 1 5FEC4340
 P 1800 2550
 F 0 "U2" H 2200 2550 45  0001 C CNN
 F 1 "BOSCH_55P" H 1600 -2150 45  0001 C CNN
-F 2 "Downloads:MEGASQUIRT_BOSCH_55P" V 2100 2350 20  0001 C CNN
+F 2 "rusefi_hw_motronic:MEGASQUIRT_BOSCH_55P" V 2100 2350 20  0001 C CNN
 F 3 "" H 1800 2550 50  0001 C CNN
 	1    1800 2550
 	1    0    0    -1  
@@ -2131,4 +2120,15 @@ Wire Wire Line
 	9000 5850 9000 6100
 Wire Wire Line
 	9100 5700 9100 5950
+$Comp
+L rusefi_hw_motronic:MPXA4250A6U U6
+U 1 1 5F1099E0
+P 6350 1900
+F 0 "U6" H 6350 2150 45  0000 C CNN
+F 1 "MPXA4250A6U" H 6350 1650 45  0000 C CNN
+F 2 "rusefi_hw_motronic:MPXA4250A6U" H 6550 1600 20  0001 C CNN
+F 3 "" H 6650 2150 50  0001 C CNN
+	1    6350 1900
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

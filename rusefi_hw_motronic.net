@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/kon/src/rusefi_hw_motronic/rusefi_hw_motronic.sch)
-    (date "Fri 10 Jul 2020 10:35:00 PM PDT")
+    (date "Sat 11 Jul 2020 08:43:39 AM PDT")
     (tool "Eeschema 5.1.6-1.fc32")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -17,7 +17,7 @@
   (components
     (comp (ref U$1)
       (value MPX4250A)
-      (footprint Downloads:MEGASQUIRT_MPXA4250A6U)
+      (footprint rusefi_hw_motronic:MPXA4250A6U)
       (libsource (lib rusefi_hw_motronic) (part MPX4250A) (description ""))
       (sheetpath (names /) (tstamps /))
       (tstamp 5EF1C46A))
