@@ -967,9 +967,9 @@ $EndComp
 Text Notes 9600 10350 0    70   ~ 0
 USB
 Text GLabel 9450 10500 0    50   Input ~ 0
-USB_DP
+USB+
 Text GLabel 9450 10600 0    50   Input ~ 0
-USB_DM
+USB-
 $Comp
 L power:GND #PWR058
 U 1 1 5EFFBC53
@@ -1356,9 +1356,9 @@ Wire Wire Line
 Wire Wire Line
 	14550 6050 14700 6050
 Text GLabel 14550 3450 0    50   Input ~ 0
-USB_DP
+USB+
 Text GLabel 14550 3300 0    50   Input ~ 0
-USB_DM
+USB-
 Wire Wire Line
 	14550 3450 14700 3450
 Wire Wire Line
