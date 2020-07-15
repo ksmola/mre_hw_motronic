@@ -2131,4 +2131,46 @@ F 3 "" H 6650 2150 50  0001 C CNN
 	1    6350 1900
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:Battery_Cell BT1
+U 1 1 5F149E61
+P 12300 9250
+F 0 "BT1" H 12418 9346 50  0000 L CNN
+F 1 "Battery_Cell" H 12418 9255 50  0000 L CNN
+F 2 "Battery:BatteryHolder_Keystone_1060_1x2032" V 12300 9310 50  0001 C CNN
+F 3 "~" V 12300 9310 50  0001 C CNN
+	1    12300 9250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12300 9050 12300 8950
+Wire Wire Line
+	12300 8950 12550 8950
+Wire Wire Line
+	12300 9350 12300 9450
+Wire Wire Line
+	12300 9450 12550 9450
+Text GLabel 12550 9450 2    50   Input ~ 0
+RTC_BATT-
+Text GLabel 12550 8950 2    50   Input ~ 0
+RTC_BATT+
+$Comp
+L molex_48pin_MRE:molex_48pin_MRE U3
+U 3 1 5F19B1ED
+P 13550 7150
+F 0 "U3" H 13778 7150 60  0000 L CNN
+F 1 "molex_48pin_MRE" V 14750 7150 60  0001 C CNN
+F 2 "rusefi_lib:Molex_48_MRE" H 13550 7150 60  0001 C CNN
+F 3 "" H 13550 7150 60  0001 C CNN
+	3    13550 7150
+	1    0    0    -1  
+$EndComp
+Text GLabel 13350 7100 0    50   Input ~ 0
+RTC_BATT+
+Text GLabel 13350 7200 0    50   Input ~ 0
+RTC_BATT-
+Wire Wire Line
+	13350 7200 13550 7200
+Wire Wire Line
+	13550 7100 13350 7100
 $EndSCHEMATC
