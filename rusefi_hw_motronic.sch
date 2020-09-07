@@ -953,154 +953,8 @@ Text GLabel 14550 6050 0    50   Input ~ 0
 OIL_PRESSURE
 Text GLabel 14550 4700 0    50   Input ~ 0
 VEHICLE_SPEED
-$Comp
-L Connector:Conn_01x04_Female J8
-U 1 1 5EFF99B1
-P 9750 10600
-F 0 "J8" H 9778 10576 50  0000 L CNN
-F 1 "Conn_01x04_Female" H 9778 10485 50  0000 L CNN
-F 2 "Connector_Molex:Molex_PicoBlade_53047-0410_1x04_P1.25mm_Vertical" H 9750 10600 50  0001 C CNN
-F 3 "~" H 9750 10600 50  0001 C CNN
-	1    9750 10600
-	1    0    0    -1  
-$EndComp
-Text Notes 9600 10350 0    70   ~ 0
-USB
-Text GLabel 9450 10500 0    50   Input ~ 0
-USB+
-Text GLabel 9450 10600 0    50   Input ~ 0
-USB-
-$Comp
-L power:GND #PWR058
-U 1 1 5EFFBC53
-P 9450 10850
-F 0 "#PWR058" H 9450 10600 50  0001 C CNN
-F 1 "GND" H 9455 10677 50  0000 C CNN
-F 2 "" H 9450 10850 50  0001 C CNN
-F 3 "" H 9450 10850 50  0001 C CNN
-	1    9450 10850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9450 10850 9450 10800
-Wire Wire Line
-	9450 10800 9550 10800
-Wire Wire Line
-	9550 10600 9450 10600
-Wire Wire Line
-	9450 10500 9550 10500
-$Comp
-L power:+5V #PWR054
-U 1 1 5F01D2A8
-P 8900 10650
-F 0 "#PWR054" H 8900 10500 50  0001 C CNN
-F 1 "+5V" H 8915 10823 50  0000 C CNN
-F 2 "" H 8900 10650 50  0001 C CNN
-F 3 "" H 8900 10650 50  0001 C CNN
-	1    8900 10650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8900 10650 8900 10700
-Wire Wire Line
-	8900 10700 9550 10700
-$Comp
-L Connector:Conn_01x03_Female J6
-U 1 1 5F03860C
-P 6400 10600
-F 0 "J6" H 6428 10626 50  0000 L CNN
-F 1 "Conn_01x03_Female" H 6428 10535 50  0000 L CNN
-F 2 "Connector_Molex:Molex_PicoBlade_53047-0310_1x03_P1.25mm_Vertical" H 6400 10600 50  0001 C CNN
-F 3 "~" H 6400 10600 50  0001 C CNN
-	1    6400 10600
-	1    0    0    -1  
-$EndComp
-Text Notes 6200 10400 0    70   ~ 0
-CAN
-Text GLabel 6100 10500 0    50   Input ~ 0
-CAN_L
-Text GLabel 6100 10600 0    50   Input ~ 0
-CAN_H
-$Comp
-L power:GND #PWR056
-U 1 1 5F038CAF
-P 6100 10750
-F 0 "#PWR056" H 6100 10500 50  0001 C CNN
-F 1 "GND" H 6105 10577 50  0000 C CNN
-F 2 "" H 6100 10750 50  0001 C CNN
-F 3 "" H 6100 10750 50  0001 C CNN
-	1    6100 10750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6100 10750 6100 10700
-Wire Wire Line
-	6100 10700 6200 10700
-Wire Wire Line
-	6200 10600 6100 10600
-Wire Wire Line
-	6100 10500 6200 10500
-$Comp
-L Connector:Conn_01x03_Female J7
-U 1 1 5F05B0AD
-P 8000 10600
-F 0 "J7" H 8028 10626 50  0000 L CNN
-F 1 "Conn_01x03_Female" H 8028 10535 50  0000 L CNN
-F 2 "Connector_Molex:Molex_PicoBlade_53047-0310_1x03_P1.25mm_Vertical" H 8000 10600 50  0001 C CNN
-F 3 "~" H 8000 10600 50  0001 C CNN
-	1    8000 10600
-	1    0    0    -1  
-$EndComp
-Text Notes 7800 10400 0    70   ~ 0
-TPS
-$Comp
-L power:+5V #PWR052
-U 1 1 5F05BA03
-P 7450 10450
-F 0 "#PWR052" H 7450 10300 50  0001 C CNN
-F 1 "+5V" H 7465 10623 50  0000 C CNN
-F 2 "" H 7450 10450 50  0001 C CNN
-F 3 "" H 7450 10450 50  0001 C CNN
-	1    7450 10450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7450 10450 7450 10500
-Wire Wire Line
-	7450 10500 7800 10500
-Wire Wire Line
-	7800 10700 7700 10700
-Text GLabel 7700 10600 0    50   Input ~ 0
-TPS
-Wire Wire Line
-	7700 10600 7800 10600
 Text GLabel 14550 3050 0    50   Input ~ 0
 ECON
-$Comp
-L Connector:Conn_01x03_Female J4
-U 1 1 5F147BDC
-P 3450 10600
-F 0 "J4" H 3478 10626 50  0000 L CNN
-F 1 "Conn_01x03_Female" V 3600 10250 50  0000 L CNN
-F 2 "Connector_Molex:Molex_PicoBlade_53047-0310_1x03_P1.25mm_Vertical" H 3450 10600 50  0001 C CNN
-F 3 "~" H 3450 10600 50  0001 C CNN
-	1    3450 10600
-	1    0    0    -1  
-$EndComp
-Text Notes 3250 10400 0    70   ~ 0
-IGN
-Text GLabel 3150 10500 0    50   Input ~ 0
-IGN1
-Text GLabel 3150 10600 0    50   Input ~ 0
-IGN2
-Text GLabel 3150 10700 0    50   Input ~ 0
-IGN3
-Wire Wire Line
-	3150 10500 3250 10500
-Wire Wire Line
-	3250 10600 3150 10600
-Wire Wire Line
-	3150 10700 3250 10700
 $Comp
 L Device:R_US R11
 U 1 1 5F18E90B
@@ -1251,61 +1105,6 @@ Wire Wire Line
 	8100 8700 8100 8650
 Wire Wire Line
 	8100 8650 8450 8650
-$Comp
-L Connector:Conn_01x03_Female J3
-U 1 1 5F2CD396
-P 1400 10600
-F 0 "J3" H 1428 10626 50  0000 L CNN
-F 1 "Conn_01x03_Female" V 1550 10300 50  0000 L CNN
-F 2 "Connector_Molex:Molex_PicoBlade_53047-0310_1x03_P1.25mm_Vertical" H 1400 10600 50  0001 C CNN
-F 3 "~" H 1400 10600 50  0001 C CNN
-	1    1400 10600
-	1    0    0    -1  
-$EndComp
-Text GLabel 1100 10500 0    50   Input ~ 0
-KNOCK_1
-Text GLabel 1100 10600 0    50   Input ~ 0
-KNOCK_2
-$Comp
-L power:GND #PWR055
-U 1 1 5F2CDC65
-P 1100 10750
-F 0 "#PWR055" H 1100 10500 50  0001 C CNN
-F 1 "GND" H 1105 10577 50  0000 C CNN
-F 2 "" H 1100 10750 50  0001 C CNN
-F 3 "" H 1100 10750 50  0001 C CNN
-	1    1100 10750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1100 10750 1100 10700
-Wire Wire Line
-	1100 10700 1200 10700
-Wire Wire Line
-	1200 10600 1100 10600
-Wire Wire Line
-	1100 10500 1200 10500
-Text Notes 10750 10400 0    70   ~ 0
-ETB
-Text GLabel 10800 10500 0    50   Input ~ 0
-ETB+
-Text GLabel 10800 10600 0    50   Input ~ 0
-ETB-
-Wire Wire Line
-	10900 10600 10800 10600
-Wire Wire Line
-	10800 10500 10900 10500
-$Comp
-L Connector:Conn_01x02_Female J2
-U 1 1 5F0FE97C
-P 11100 10500
-F 0 "J2" H 11128 10476 50  0000 L CNN
-F 1 "Conn_01x02_Female" H 10850 10350 50  0000 L CNN
-F 2 "Connector_Molex:Molex_Sabre_43160-0102_1x02_P7.49mm_Vertical" H 11100 10500 50  0001 C CNN
-F 3 "~" H 11100 10500 50  0001 C CNN
-	1    11100 10500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2800 6850 1700 6850
 Wire Wire Line
@@ -1363,8 +1162,6 @@ Wire Wire Line
 	14550 3450 14700 3450
 Wire Wire Line
 	14550 3300 14700 3300
-Text Notes 1050 10350 0    70   ~ 0
-KNOCK
 Wire Wire Line
 	8900 8050 9050 8050
 Wire Wire Line
@@ -1516,57 +1313,6 @@ Wire Wire Line
 Connection ~ 10400 8250
 Wire Wire Line
 	10400 8250 10850 8250
-$Comp
-L Connector:Conn_01x03_Female J9
-U 1 1 5F07A253
-P 2550 10650
-F 0 "J9" H 2578 10676 50  0000 L CNN
-F 1 "Conn_01x03_Female" V 2700 10350 50  0000 L CNN
-F 2 "Connector_Molex:Molex_PicoBlade_53047-0310_1x03_P1.25mm_Vertical" H 2550 10650 50  0001 C CNN
-F 3 "~" H 2550 10650 50  0001 C CNN
-	1    2550 10650
-	1    0    0    -1  
-$EndComp
-Text Notes 2050 10300 0    70   ~ 0
-FAN PWM
-Text GLabel 2250 10650 0    50   Input ~ 0
-FAN_PWM
-$Comp
-L power:GND #PWR057
-U 1 1 5F07BFD4
-P 2250 10800
-F 0 "#PWR057" H 2250 10550 50  0001 C CNN
-F 1 "GND" H 2255 10627 50  0000 C CNN
-F 2 "" H 2250 10800 50  0001 C CNN
-F 3 "" H 2250 10800 50  0001 C CNN
-	1    2250 10800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2250 10800 2250 10750
-Wire Wire Line
-	2250 10750 2350 10750
-$Comp
-L power:+5V #PWR053
-U 1 1 5F08D5E9
-P 2250 10500
-F 0 "#PWR053" H 2250 10350 50  0001 C CNN
-F 1 "+5V" H 2265 10673 50  0000 C CNN
-F 2 "" H 2250 10500 50  0001 C CNN
-F 3 "" H 2250 10500 50  0001 C CNN
-	1    2250 10500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2250 10500 2250 10550
-Wire Wire Line
-	2250 10550 2350 10550
-Wire Wire Line
-	2250 10650 2350 10650
-Wire Notes Line
-	650  10150 11650 10150
-Text Notes 650  10150 0    70   ~ 0
-CONNECTORS
 Wire Wire Line
 	10650 8850 10750 8850
 Wire Wire Line
@@ -1655,8 +1401,6 @@ Text GLabel 14550 2100 0    50   Input ~ 0
 ETB+
 Text GLabel 14550 2550 0    50   Input ~ 0
 ETB-
-Text GLabel 7700 10700 0    50   Input ~ 0
-SENSOR_GND
 Text GLabel 14550 3150 0    50   Input ~ 0
 FAN_PWM
 Wire Wire Line
@@ -1755,31 +1499,6 @@ Wire Wire Line
 	13600 8250 13500 8250
 Wire Wire Line
 	13550 7800 13550 7950
-Text GLabel 4500 10600 0    50   Input ~ 0
-OIL_PRESSURE
-Text GLabel 4500 10500 0    50   Input ~ 0
-OIL_TEMP
-Text GLabel 4500 10700 0    50   Input ~ 0
-SENSOR_GND
-$Comp
-L Connector:Conn_01x03_Female J5
-U 1 1 5F74178B
-P 4850 10600
-F 0 "J5" H 4878 10626 50  0000 L CNN
-F 1 "Conn_01x03_Female" H 4878 10535 50  0000 L CNN
-F 2 "Connector_Molex:Molex_PicoBlade_53047-0310_1x03_P1.25mm_Vertical" H 4850 10600 50  0001 C CNN
-F 3 "~" H 4850 10600 50  0001 C CNN
-	1    4850 10600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4500 10500 4650 10500
-Wire Wire Line
-	4650 10600 4500 10600
-Wire Wire Line
-	4500 10700 4650 10700
-Text Notes 4200 10350 0    70   ~ 0
-OIL
 NoConn ~ 14700 4100
 NoConn ~ 14700 3750
 NoConn ~ 14700 2950
@@ -2057,37 +1776,16 @@ TACH_OUT
 Wire Wire Line
 	14700 6350 14550 6350
 $Comp
-L Connector:Conn_01x02_Female J10
-U 1 1 5FE1428D
-P 11150 10950
-F 0 "J10" H 11178 10926 50  0000 L CNN
-F 1 "Conn_01x02_Female" H 10900 10800 50  0000 L CNN
-F 2 "Connector_Molex:Molex_PicoBlade_53047-0210_1x02_P1.25mm_Vertical" H 11150 10950 50  0001 C CNN
-F 3 "~" H 11150 10950 50  0001 C CNN
-	1    11150 10950
-	1    0    0    -1  
-$EndComp
-Text GLabel 10850 11050 0    50   Input ~ 0
-SENSOR_GND
-Text GLabel 10850 10950 0    50   Input ~ 0
-CAM
-$Comp
 L rusefi_hw_motronic:BOSCH_55P U2
 U 1 1 5FEC4340
 P 1800 2550
 F 0 "U2" H 2200 2550 45  0001 C CNN
 F 1 "BOSCH_55P" H 1600 -2150 45  0001 C CNN
-F 2 "rusefi_hw_motronic:BOSCH_55P" V 2100 2350 20  0001 C CNN
+F 2 "hw_55_te:TE_963063-2" V 2100 2350 20  0001 C CNN
 F 3 "" H 1800 2550 50  0001 C CNN
 	1    1800 2550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10950 11050 10850 11050
-Wire Wire Line
-	10850 10950 10950 10950
-Text Notes 10800 10900 0    70   ~ 0
-CAM
 $Comp
 L Connector:Conn_01x02_Female J1
 U 1 1 5F0EA5EB
@@ -2173,4 +1871,169 @@ Wire Wire Line
 	13350 7200 13550 7200
 Wire Wire Line
 	13550 7100 13350 7100
+Text GLabel 4950 8050 0    50   Input ~ 0
+IGN1
+Text GLabel 4950 8150 0    50   Input ~ 0
+IGN2
+Text GLabel 4950 8250 0    50   Input ~ 0
+IGN3
+Wire Wire Line
+	4950 8050 5100 8050
+Wire Wire Line
+	5100 8150 4950 8150
+Wire Wire Line
+	4950 8250 5100 8250
+$Comp
+L power:+5V #PWR0101
+U 1 1 5F5DA13C
+P 4600 8350
+F 0 "#PWR0101" H 4600 8200 50  0001 C CNN
+F 1 "+5V" H 4615 8523 50  0000 C CNN
+F 2 "" H 4600 8350 50  0001 C CNN
+F 3 "" H 4600 8350 50  0001 C CNN
+	1    4600 8350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 8350 5100 8350
+Text GLabel 4950 8450 0    50   Input ~ 0
+FAN_PWM
+Wire Wire Line
+	4950 8450 5100 8450
+$Comp
+L power:GND #PWR0102
+U 1 1 5F60FA0B
+P 4250 8550
+F 0 "#PWR0102" H 4250 8300 50  0001 C CNN
+F 1 "GND" H 4255 8377 50  0000 C CNN
+F 2 "" H 4250 8550 50  0001 C CNN
+F 3 "" H 4250 8550 50  0001 C CNN
+	1    4250 8550
+	1    0    0    -1  
+$EndComp
+Text GLabel 4950 9150 0    50   Input ~ 0
+KNOCK_1
+Text GLabel 4950 9250 0    50   Input ~ 0
+KNOCK_2
+Wire Wire Line
+	5100 9250 4950 9250
+Text GLabel 4950 8650 0    50   Input ~ 0
+OIL_TEMP
+Wire Wire Line
+	4950 8650 5100 8650
+Wire Wire Line
+	4250 8550 5100 8550
+Text GLabel 4950 8750 0    50   Input ~ 0
+OIL_PRESSURE
+Text GLabel 4950 8850 0    50   Input ~ 0
+SENSOR_GND
+Wire Wire Line
+	4950 8850 5100 8850
+Wire Wire Line
+	4950 8750 5100 8750
+Text GLabel 4950 8950 0    50   Input ~ 0
+CAN_L
+Text GLabel 4950 9050 0    50   Input ~ 0
+CAN_H
+Wire Wire Line
+	5100 8950 4950 8950
+Wire Wire Line
+	4950 9050 5100 9050
+Wire Wire Line
+	5850 8150 5600 8150
+Text GLabel 5800 8250 2    50   Input ~ 0
+TPS
+Wire Wire Line
+	5800 8250 5600 8250
+Text GLabel 5800 8350 2    50   Input ~ 0
+SENSOR_GND
+Wire Wire Line
+	5800 8350 5600 8350
+Text GLabel 5800 8450 2    50   Input ~ 0
+USB+
+Text GLabel 5800 8550 2    50   Input ~ 0
+USB-
+Wire Wire Line
+	5800 8550 5600 8550
+Wire Wire Line
+	5600 8450 5800 8450
+$Comp
+L power:+5V #PWR0105
+U 1 1 5F82D777
+P 6150 8650
+F 0 "#PWR0105" H 6150 8500 50  0001 C CNN
+F 1 "+5V" H 6165 8823 50  0000 C CNN
+F 2 "" H 6150 8650 50  0001 C CNN
+F 3 "" H 6150 8650 50  0001 C CNN
+	1    6150 8650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 8650 5600 8650
+$Comp
+L power:GND #PWR0106
+U 1 1 5F8677A3
+P 6450 8750
+F 0 "#PWR0106" H 6450 8500 50  0001 C CNN
+F 1 "GND" H 6455 8577 50  0000 C CNN
+F 2 "" H 6450 8750 50  0001 C CNN
+F 3 "" H 6450 8750 50  0001 C CNN
+	1    6450 8750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 8750 5600 8750
+Text GLabel 5800 9150 2    50   Input ~ 0
+ETB+
+Text GLabel 5800 9250 2    50   Input ~ 0
+ETB-
+Wire Wire Line
+	5600 9250 5800 9250
+Text GLabel 5800 8850 2    50   Input ~ 0
+CAM
+Wire Wire Line
+	5800 8850 5600 8850
+Text GLabel 5800 8950 2    50   Input ~ 0
+SENSOR_GND
+Wire Wire Line
+	5600 8950 5800 8950
+Wire Wire Line
+	5800 9150 5600 9150
+$Comp
+L rusefi_hw_motronic:TE_6437288-6 U7
+U 1 1 5F9EF5D1
+P 5350 8700
+F 0 "U7" H 5350 9615 50  0000 C CNN
+F 1 "TE_6437288-6" H 5350 9524 50  0000 C CNN
+F 2 "rusefi_hw_motronic:TE_6437288-6" H 5350 8700 50  0001 C CNN
+F 3 "" H 5350 8700 50  0001 C CNN
+	1    5350 8700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5F9F15E6
+P 6100 8050
+F 0 "#PWR0103" H 6100 7800 50  0001 C CNN
+F 1 "GND" H 6105 7877 50  0000 C CNN
+F 2 "" H 6100 8050 50  0001 C CNN
+F 3 "" H 6100 8050 50  0001 C CNN
+	1    6100 8050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 8050 5600 8050
+Wire Wire Line
+	5100 9150 4950 9150
+$Comp
+L power:+5V #PWR0104
+U 1 1 5F7A164A
+P 5850 8150
+F 0 "#PWR0104" H 5850 8000 50  0001 C CNN
+F 1 "+5V" H 5865 8323 50  0000 C CNN
+F 2 "" H 5850 8150 50  0001 C CNN
+F 3 "" H 5850 8150 50  0001 C CNN
+	1    5850 8150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
