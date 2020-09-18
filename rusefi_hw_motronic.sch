@@ -1852,25 +1852,6 @@ Text GLabel 12550 9450 2    50   Input ~ 0
 RTC_BATT-
 Text GLabel 12550 8950 2    50   Input ~ 0
 RTC_BATT+
-$Comp
-L molex_48pin_MRE:molex_48pin_MRE U3
-U 3 1 5F19B1ED
-P 13550 7150
-F 0 "U3" H 13778 7150 60  0000 L CNN
-F 1 "molex_48pin_MRE" V 14750 7150 60  0001 C CNN
-F 2 "rusefi_lib:Molex_48_MRE" H 13550 7150 60  0001 C CNN
-F 3 "" H 13550 7150 60  0001 C CNN
-	3    13550 7150
-	1    0    0    -1  
-$EndComp
-Text GLabel 13350 7100 0    50   Input ~ 0
-RTC_BATT+
-Text GLabel 13350 7200 0    50   Input ~ 0
-RTC_BATT-
-Wire Wire Line
-	13350 7200 13550 7200
-Wire Wire Line
-	13550 7100 13350 7100
 Text GLabel 4950 8050 0    50   Input ~ 0
 IGN1
 Text GLabel 4950 8150 0    50   Input ~ 0
@@ -2036,4 +2017,23 @@ F 3 "" H 5850 8150 50  0001 C CNN
 	1    5850 8150
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector:Conn_01x02_Female J2
+U 1 1 5F665A5C
+P 13450 9750
+F 0 "J2" H 13478 9726 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 13478 9635 50  0000 L CNN
+F 2 "Connector_Molex:Molex_PicoBlade_53047-0210_1x02_P1.25mm_Vertical" H 13450 9750 50  0001 C CNN
+F 3 "~" H 13450 9750 50  0001 C CNN
+	1    13450 9750
+	1    0    0    -1  
+$EndComp
+Text GLabel 13150 9750 0    50   Input ~ 0
+RTC_BATT+
+Text GLabel 13150 9850 0    50   Input ~ 0
+RTC_BATT-
+Wire Wire Line
+	13150 9850 13250 9850
+Wire Wire Line
+	13250 9750 13150 9750
 $EndSCHEMATC
