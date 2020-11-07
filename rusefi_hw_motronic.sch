@@ -135,7 +135,7 @@ F 3 "~" H 2150 6750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 2500 6750 2    50   Input ~ 0
-TPS
+TPS1
 Wire Wire Line
 	2500 6750 2300 6750
 NoConn ~ 1700 2050
@@ -516,9 +516,9 @@ IAT
 Text GLabel 14550 4600 0    50   Input ~ 0
 MAP
 Text GLabel 14550 3850 0    50   Input ~ 0
-TPS
+TPS1
 Text GLabel 14550 4950 0    50   Input ~ 0
-O2_IN
+AV7
 Wire Wire Line
 	14550 4600 14700 4600
 Wire Wire Line
@@ -1911,7 +1911,7 @@ Wire Wire Line
 Wire Wire Line
 	6450 8150 5600 8150
 Text GLabel 5800 8250 2    50   Input ~ 0
-TPS
+TPS1
 Wire Wire Line
 	5800 8250 5600 8250
 Text GLabel 5800 8350 2    50   Input ~ 0
@@ -2050,4 +2050,33 @@ Wire Wire Line
 	12150 6150 12050 6150
 Wire Wire Line
 	12300 5900 12400 5900
+Text GLabel 5800 9050 2    50   Input ~ 0
+TPS2
+Text GLabel 12050 5300 0    50   Input ~ 0
+TPS2
+$Comp
+L Jumper:SolderJumper_3_Open JP?
+U 1 1 5FC8E902
+P 12150 5050
+F 0 "JP?" V 12196 5117 50  0000 L CNN
+F 1 "SolderJumper_3_Open" V 12105 5117 50  0000 L CNN
+F 2 "" H 12150 5050 50  0001 C CNN
+F 3 "~" H 12150 5050 50  0001 C CNN
+	1    12150 5050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	12050 5300 12150 5300
+Wire Wire Line
+	12150 5300 12150 5250
+Text GLabel 12050 4800 0    50   Input ~ 0
+O2_IN
+Text GLabel 12400 5050 2    50   Input ~ 0
+AV7
+Wire Wire Line
+	12050 4800 12150 4800
+Wire Wire Line
+	12150 4800 12150 4850
+Wire Wire Line
+	12300 5050 12400 5050
 $EndSCHEMATC
