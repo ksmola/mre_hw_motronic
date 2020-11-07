@@ -2030,12 +2030,12 @@ VEHICLE_SPEED
 Text GLabel 12400 5900 2    50   Input ~ 0
 AV10
 $Comp
-L Jumper:SolderJumper_3_Open JP?
+L Jumper:SolderJumper_3_Open JP6
 U 1 1 5FBB3D44
 P 12150 5900
-F 0 "JP?" V 12196 5967 50  0000 L CNN
+F 0 "JP6" V 12196 5967 50  0000 L CNN
 F 1 "SolderJumper_3_Open" V 12105 5967 50  0000 L CNN
-F 2 "" H 12150 5900 50  0001 C CNN
+F 2 "Jumper:SolderJumper-3_P2.0mm_Open_TrianglePad1.0x1.5mm_NumberLabels" H 12150 5900 50  0001 C CNN
 F 3 "~" H 12150 5900 50  0001 C CNN
 	1    12150 5900
 	0    -1   -1   0   
@@ -2055,12 +2055,12 @@ TPS2
 Text GLabel 12050 5300 0    50   Input ~ 0
 TPS2
 $Comp
-L Jumper:SolderJumper_3_Open JP?
+L Jumper:SolderJumper_3_Open JP5
 U 1 1 5FC8E902
 P 12150 5050
-F 0 "JP?" V 12196 5117 50  0000 L CNN
+F 0 "JP5" V 12196 5117 50  0000 L CNN
 F 1 "SolderJumper_3_Open" V 12105 5117 50  0000 L CNN
-F 2 "" H 12150 5050 50  0001 C CNN
+F 2 "Jumper:SolderJumper-3_P2.0mm_Open_TrianglePad1.0x1.5mm_NumberLabels" H 12150 5050 50  0001 C CNN
 F 3 "~" H 12150 5050 50  0001 C CNN
 	1    12150 5050
 	0    -1   -1   0   
