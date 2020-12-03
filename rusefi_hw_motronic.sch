@@ -867,7 +867,7 @@ F 3 "" H 14100 8150 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 14100 8250 2    50   Input ~ 0
-MISO
+PC10
 Text GLabel 14100 8350 2    50   Input ~ 0
 SCK
 $Comp
@@ -1475,7 +1475,7 @@ Wire Wire Line
 Wire Wire Line
 	14050 7950 14000 7950
 Text GLabel 13500 8150 0    50   Input ~ 0
-MOSI
+PC11
 Wire Wire Line
 	14000 8350 14100 8350
 Wire Wire Line
@@ -1751,14 +1751,14 @@ Wire Wire Line
 	14100 5900 14100 5950
 Wire Wire Line
 	14100 5950 14700 5950
-Text GLabel 11800 6700 0    50   Input ~ 0
+Text GLabel 11900 7150 0    50   Input ~ 0
 O2_HEATER
-Text GLabel 12050 6700 2    50   Input ~ 0
+Text GLabel 12150 7150 2    50   Input ~ 0
 FUEL_PUMP
 Wire Wire Line
-	12050 6700 11800 6700
-Text Notes 11350 6600 0    39   ~ 0
-fuel pump output also turns on o2 sensor
+	12150 7150 11900 7150
+Text Notes 11450 7050 0    39   ~ 0
+fuel pump output also powers o2 sensor
 Text GLabel 14550 6350 0    50   Input ~ 0
 TACH_OUT
 Wire Wire Line
@@ -2023,62 +2023,62 @@ Text GLabel 5800 8850 2    50   Input ~ 0
 CAM
 Text GLabel 5800 8750 2    50   Input ~ 0
 PPS2
-Text GLabel 12050 6150 0    50   Input ~ 0
+Text GLabel 12050 4650 0    50   Input ~ 0
 PPS2
-Text GLabel 12050 5650 0    50   Input ~ 0
+Text GLabel 12050 4150 0    50   Input ~ 0
 VEHICLE_SPEED
-Text GLabel 12400 5900 2    50   Input ~ 0
+Text GLabel 12400 4400 2    50   Input ~ 0
 AV10
 $Comp
 L Jumper:SolderJumper_3_Open JP6
 U 1 1 5FBB3D44
-P 12150 5900
-F 0 "JP6" V 12196 5967 50  0000 L CNN
-F 1 "SolderJumper_3_Open" V 12105 5967 50  0000 L CNN
-F 2 "Jumper:SolderJumper-3_P2.0mm_Open_TrianglePad1.0x1.5mm_NumberLabels" H 12150 5900 50  0001 C CNN
-F 3 "~" H 12150 5900 50  0001 C CNN
-	1    12150 5900
+P 12150 4400
+F 0 "JP6" V 12196 4467 50  0000 L CNN
+F 1 "SolderJumper_3_Open" V 12105 4467 50  0000 L CNN
+F 2 "Jumper:SolderJumper-3_P2.0mm_Open_TrianglePad1.0x1.5mm_NumberLabels" H 12150 4400 50  0001 C CNN
+F 3 "~" H 12150 4400 50  0001 C CNN
+	1    12150 4400
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	12050 5650 12150 5650
+	12050 4150 12150 4150
 Wire Wire Line
-	12150 5650 12150 5700
+	12150 4150 12150 4200
 Wire Wire Line
-	12150 6100 12150 6150
+	12150 4600 12150 4650
 Wire Wire Line
-	12150 6150 12050 6150
+	12150 4650 12050 4650
 Wire Wire Line
-	12300 5900 12400 5900
+	12300 4400 12400 4400
 Text GLabel 5800 9050 2    50   Input ~ 0
 TPS2
-Text GLabel 12050 5300 0    50   Input ~ 0
+Text GLabel 12050 3800 0    50   Input ~ 0
 TPS2
 $Comp
 L Jumper:SolderJumper_3_Open JP5
 U 1 1 5FC8E902
-P 12150 5050
-F 0 "JP5" V 12196 5117 50  0000 L CNN
-F 1 "SolderJumper_3_Open" V 12105 5117 50  0000 L CNN
-F 2 "Jumper:SolderJumper-3_P2.0mm_Open_TrianglePad1.0x1.5mm_NumberLabels" H 12150 5050 50  0001 C CNN
-F 3 "~" H 12150 5050 50  0001 C CNN
-	1    12150 5050
+P 12150 3550
+F 0 "JP5" V 12196 3617 50  0000 L CNN
+F 1 "SolderJumper_3_Open" V 12105 3617 50  0000 L CNN
+F 2 "Jumper:SolderJumper-3_P2.0mm_Open_TrianglePad1.0x1.5mm_NumberLabels" H 12150 3550 50  0001 C CNN
+F 3 "~" H 12150 3550 50  0001 C CNN
+	1    12150 3550
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	12050 5300 12150 5300
+	12050 3800 12150 3800
 Wire Wire Line
-	12150 5300 12150 5250
-Text GLabel 12050 4800 0    50   Input ~ 0
+	12150 3800 12150 3750
+Text GLabel 12050 3300 0    50   Input ~ 0
 O2_IN
-Text GLabel 12400 5050 2    50   Input ~ 0
+Text GLabel 12400 3550 2    50   Input ~ 0
 AV7
 Wire Wire Line
-	12050 4800 12150 4800
+	12050 3300 12150 3300
 Wire Wire Line
-	12150 4800 12150 4850
+	12150 3300 12150 3350
 Wire Wire Line
-	12300 5050 12400 5050
+	12300 3550 12400 3550
 $Comp
 L RF_Module:ESP32-WROOM-32 U8
 U 1 1 5FC5AF38
@@ -2124,4 +2124,68 @@ F 3 "" H 8800 3700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8800 3700 8800 3800
+Text GLabel 12050 5550 0    50   Input ~ 0
+MISO
+Text GLabel 12050 5050 0    50   Input ~ 0
+TS_WIFI_TX
+Text GLabel 12400 5300 2    50   Input ~ 0
+PC10
+$Comp
+L Jumper:SolderJumper_3_Open JP7
+U 1 1 5FDD7B14
+P 12150 5300
+F 0 "JP7" V 12196 5367 50  0000 L CNN
+F 1 "SolderJumper_3_Open" V 12105 5367 50  0000 L CNN
+F 2 "Jumper:SolderJumper-3_P2.0mm_Open_TrianglePad1.0x1.5mm_NumberLabels" H 12150 5300 50  0001 C CNN
+F 3 "~" H 12150 5300 50  0001 C CNN
+	1    12150 5300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	12050 5050 12150 5050
+Wire Wire Line
+	12150 5050 12150 5100
+Wire Wire Line
+	12150 5500 12150 5550
+Wire Wire Line
+	12150 5550 12050 5550
+Wire Wire Line
+	12300 5300 12400 5300
+Text GLabel 12050 6350 0    50   Input ~ 0
+MOSI
+Text GLabel 12050 5850 0    50   Input ~ 0
+TS_WIFI_RX
+$Comp
+L Jumper:SolderJumper_3_Open JP8
+U 1 1 5FDFF17E
+P 12150 6100
+F 0 "JP8" V 12196 6167 50  0000 L CNN
+F 1 "SolderJumper_3_Open" V 12105 6167 50  0000 L CNN
+F 2 "Jumper:SolderJumper-3_P2.0mm_Open_TrianglePad1.0x1.5mm_NumberLabels" H 12150 6100 50  0001 C CNN
+F 3 "~" H 12150 6100 50  0001 C CNN
+	1    12150 6100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	12050 5850 12150 5850
+Wire Wire Line
+	12150 5850 12150 5900
+Wire Wire Line
+	12150 6300 12150 6350
+Wire Wire Line
+	12150 6350 12050 6350
+Text Notes 11150 4950 0    39   ~ 0
+WiFi TunerStudio or Knock
+Wire Notes Line
+	11150 4950 12750 4950
+Wire Notes Line
+	12750 4950 12750 6450
+Wire Notes Line
+	12750 6450 11150 6450
+Wire Notes Line
+	11150 6450 11150 4950
+Text GLabel 12400 6100 2    50   Input ~ 0
+PC11
+Wire Wire Line
+	12400 6100 12300 6100
 $EndSCHEMATC
